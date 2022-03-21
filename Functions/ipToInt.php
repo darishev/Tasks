@@ -34,7 +34,7 @@ function intToIps(string $ips):string
 
 
 //ipToInt('128.0.0.1');
-intToIps('2149583361.2099713.2099713.18876929');
+intToIps('2149583361');
 
 
 
