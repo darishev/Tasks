@@ -6,13 +6,15 @@
         for($i=0;$i<count($inputArray);$i++){
             $tempData = $inputArray[$i]-$needledNum;
             array_push($goodResults,$tempData);
-            sort($goodResults);
+            asort($goodResults);
+
         }
     } else{
         return print(null);
     }
-        return print($goodResults[0]);
+
+        return print key(($goodResults));
     }
 
-findIndexOfNearest([15, 10, 3, 4], 0); // 2
+findIndexOfNearest([1, 10, 0, 4], 0); // 2
 findIndexOfNearest([], 2); // null
