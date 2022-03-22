@@ -1,5 +1,6 @@
 <?php
-    function getIntersectionOfSortedArray($firstArray,$secondArray){
+    function getIntersectionOfSortedArray(array $firstArray,array $secondArray):array
+    {
 
         $lenghtFirstArray = count($firstArray);
         $lenghtSecondArray = count($secondArray);
@@ -8,7 +9,7 @@
                 for($f=0;$f<$lenghtSecondArray;$f++){
                     if($firstArray[$i]===$secondArray[$f])
                     {
-                        echo $firstArray[$i].'<br>';
+                        return $firstArray[$i].'<br>';
                     }
                  }
             }
