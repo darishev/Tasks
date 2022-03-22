@@ -1,13 +1,14 @@
 <?php
     $cities = ['moscow', 'london', 'berlin', 'porto', null];
-    function get($cities,$index,$default = null){
+    function get(array $cities,int $index,$default = null):string
+    {
         if($index < count($cities)){
             echo $cities[$index] .'<br>';
         }
         else
         {
             $cities[$index] = $default;
-            echo $cities[$index];
+            return $cities[$index];
         }
     };
 
