@@ -1,5 +1,5 @@
 <?php
-    function getSameParity(array $inputArray=[])
+    function getSameParity(array $inputArray=[]):array
     {
         $evenNums = [];
         for($i=0;$i<count($inputArray);$i++){
