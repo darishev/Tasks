@@ -1,18 +1,18 @@
 <?php
 $names = ['john', 'smith', 'karl'];
 
- function swap ($names,$index)
+ function swap (array $names,int $index):array
     {
         if (isset($names[$index-1]) and isset($names[$index+1]) )
         {
             $tempData = $names;
             $names[$index-1] = $tempData[$index+1];
             $names[$index+1] = $tempData[$index-1];
-            var_dump($names);
+            return $names;
         }
         else
         {
-         var_dump($names);
+            return $names;
          }
     };
 
