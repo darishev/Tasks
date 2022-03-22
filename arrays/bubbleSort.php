@@ -2,7 +2,8 @@
 
 $newArray = [2,3,6,7,1,3,5];
 
-    function bubleSort($arraySort){
+    function bubleSort(array $arraySort):array
+    {
 
         $size = count($arraySort)-1;
         for ($i=0; $i<$size; $i++) {
@@ -16,6 +17,7 @@ $newArray = [2,3,6,7,1,3,5];
                 }
             }
         }
+        return $arraySort;
     }
 
 
