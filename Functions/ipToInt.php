@@ -13,3 +13,21 @@
     }
 
     ipToInt('128.32.10.1');
+
+
+    function intToIp(string $ip):string
+    {
+        $tempData = $ip;
+        $newArray=[];
+
+        for($i=0;$i<=3;$i++){
+            $newArray[$i] = $tempData & 0xff;
+            $tempData = $tempData >>8;
+        }
+        krsort($newArray);
+        $result =  implode('.',$newArray);
+
+        return print $result;
+    }
+
+    intToIp(2149583361); // '128.32.10.1'
