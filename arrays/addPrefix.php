@@ -1,7 +1,7 @@
 <?php
     $names = ['john', 'smith', 'karl'];
 
-     function addPrefix($names,$prefix = null)
+     function addPrefix($names,$prefix = null):string
      {
          if(isset($names) and $prefix)
          {
