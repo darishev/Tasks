@@ -16,7 +16,7 @@
             return $RGB;
     }
 
-function rgbToHex ($inputString)
+function rgbToHex (string $inputString):array
 {
 
     $Keys=[];
