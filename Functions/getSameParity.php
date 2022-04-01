@@ -7,9 +7,6 @@
                 array_push($evenNums, $inputArray[$i]);
             }
         }
-        return print_r($evenNums);
+        return $evenNums;
 
     }
-
-getSameParity([]); // []
-getSameParity([-1, 0, 1, -3, 10, -2]); // [-1, 1, -3]
