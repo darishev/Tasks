@@ -1,7 +1,6 @@
 <?php
 function lengthOfLastWord(string $words):int
 {
-
     $textCount = explode(' ',$words);
 
         foreach ($textCount as $key => $text){
@@ -13,11 +12,3 @@ function lengthOfLastWord(string $words):int
     return print(strlen($textCount[$textCounts]));
 
 }
-
-
-
-
-lengthOfLastWord('asd asd'); // 0
-lengthOfLastWord('man in BlacK'); // 5
-
-lengthOfLastWord('hello, world!  '); // 6
