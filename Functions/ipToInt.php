@@ -1,33 +1,13 @@
 <?php
-    function ipToInt(string $ip):int
-    {
-        $result=[];
-        $ipArray = explode('.',$ip);
-        for ($i=0,$n=4;$i<count($ipArray);$i++){
-            --$n;
-            $tempResult = ($ipArray[$i]*256**$n);
-            array_push($result,$tempResult);
-        }
-           
-        return array_sum($result);
+function ipToInt(string $ip): int
+{
+    $result = [];
+    $ipArray = explode('.', $ip);
+    for ($i = 0, $n = 4; $i < count($ipArray); $i++) {
+        --$n;
+        $tempResult = ($ipArray[$i] * 256 ** $n);
+        array_push($result, $tempResult);
     }
 
-    ipToInt('128.32.10.1');
-
-
-    function intToIp(string $ip):string
-    {
-        $tempData = $ip;
-        $newArray=[];
-
-        for($i=0;$i<=3;$i++){
-            $newArray[$i] = $tempData & 0xff;
-            $tempData = $tempData >>8;
-        }
-        krsort($newArray);
-        $result =  implode('.',$newArray);
-
-        return $result;
-    }
-
-    intToIp(2149583361); // '128.32.10.1'
+    return array_sum($result);
+}
