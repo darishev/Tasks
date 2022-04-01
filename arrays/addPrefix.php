@@ -1,13 +1,13 @@
 <?php
 
-function addPrefix($names, $prefix = null): string
+function addPrefix($names, $prefix = null): array
 {
+
     if (isset($names) and $prefix) {
         for ($i = 0; $i < count($names); $i++) {
-            $newNames = "{$prefix} {$names[$i]}";
-            return $newNames;
+            $newNames[$i] = "{$prefix} {$names[$i]}";
+
         }
-    } else {
-        return 'Префикс отсуствует';
     }
+    return $newNames;
 }
