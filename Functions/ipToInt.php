@@ -9,7 +9,7 @@
             array_push($result,$tempResult);
         }
             //$r = 128*256**3)+(32*256**2) + (10*256**1) +(1*256**0);
-        return print_r(array_sum($result));
+        return array_sum($result);
     }
 
     ipToInt('128.32.10.1');
@@ -27,7 +27,7 @@
         krsort($newArray);
         $result =  implode('.',$newArray);
 
-        return print $result;
+        return $result;
     }
 
     intToIp(2149583361); // '128.32.10.1'
