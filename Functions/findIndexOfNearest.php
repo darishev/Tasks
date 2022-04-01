@@ -10,10 +10,10 @@
 
         }
     } else{
-        return print(null);
+        return (null);
     }
 
-        return print key(($goodResults));
+        return key(($goodResults));
     }
 
 findIndexOfNearest([1, 10, 0, 4], 0); // 2
