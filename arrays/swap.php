@@ -1,13 +1,15 @@
 <?php
 function swap(array $names, int $index): array
 {
-    if (isset($names[$index - 1]) and isset($names[$index + 1])) {
+    $indexPos = $index + 1;
+    $indexNeg = $index - 1;
+
+    if (isset($names[$indexNeg]) and isset($names[$indexPos])) {
         $tempData = $names;
-        $names[$index - 1] = $tempData[$index + 1];
-        $names[$index + 1] = $tempData[$index - 1];
+        $names[$indexNeg] = $tempData[$indexPos];
+        $names[$indexPos] = $tempData[$indexNeg];
         return $names;
     } else {
         return $names;
     }
 }
-
