@@ -10,3 +10,4 @@ function getTotalAmount(array $moneyCount, string $val): int
     }
     return $sum;
 }
+
