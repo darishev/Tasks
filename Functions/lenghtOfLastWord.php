@@ -1,14 +1,14 @@
 <?php
-function lengthOfLastWord(string $words):int
+function lengthOfLastWord(string $words): int
 {
-    $textCount = explode(' ',$words);
+    $textCount = explode(' ', $words);
 
-        foreach ($textCount as $key => $text){
-            if ($text == ''){
-                unset($textCount[$key]);
-            }
+    foreach ($textCount as $key => $text) {
+        if ($text == '') {
+            unset($textCount[$key]);
         }
-    $textCounts= array_key_last($textCount);
+    }
+    $textCounts = array_key_last($textCount);
     return print(strlen($textCount[$textCounts]));
 
 }
