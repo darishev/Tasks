@@ -1,5 +1,5 @@
 <?php
-function bubleSort(array $arraySort): array
+function bubbleSort(array $arraySort): array
 {
 
     $size = count($arraySort) - 1;
@@ -10,7 +10,7 @@ function bubleSort(array $arraySort): array
                 $buffer = $arraySort[$a];
                 $arraySort[$a] = $arraySort[$s];
                 $arraySort[$s] = $buffer;
-                return $arraySort;
+
             }
         }
     }
