@@ -1,18 +1,18 @@
 <?php
-    function bubleSort(array $arraySort):array
-    {
+function bubleSort(array $arraySort): array
+{
 
-        $size = count($arraySort)-1;
-        for ($i=0; $i<$size; $i++) {
-            for ($s=0; $s<$size-$i; $s++) {
-                $a = $s+1;
-                if ($arraySort[$a] < $arraySort[$s]) {
-                    $buffer = $arraySort[$a];
-                    $arraySort[$a] = $arraySort[$s];
-                    $arraySort[$s] = $buffer;
-                    return $arraySort;
-                }
+    $size = count($arraySort) - 1;
+    for ($i = 0; $i < $size; $i++) {
+        for ($s = 0; $s < $size - $i; $s++) {
+            $a = $s + 1;
+            if ($arraySort[$a] < $arraySort[$s]) {
+                $buffer = $arraySort[$a];
+                $arraySort[$a] = $arraySort[$s];
+                $arraySort[$s] = $buffer;
+                return $arraySort;
             }
         }
-        return $arraySort;
     }
+    return $arraySort;
+}
