@@ -8,5 +8,3 @@ function get(array $cities, int $index, $default = null): string
         return $cities[$index];
     }
 }
-
-;
