@@ -2,11 +2,11 @@
 function getIntersectionOfSortedArray(array $firstArray, array $secondArray): array
 {
 
-    $lenghtFirstArray = count($firstArray);
-    $lenghtSecondArray = count($secondArray);
+    $lengthFirstArray = count($firstArray);
+    $lengthSecondArray = count($secondArray);
 
-    for ($i = 0; $i < $lenghtFirstArray; $i++) {
-        for ($f = 0; $f < $lenghtSecondArray; $f++) {
+    for ($i = 0; $i < $lengthFirstArray; $i++) {
+        for ($f = 0; $f < $lengthSecondArray; $f++) {
             if ($firstArray[$i] === $secondArray[$f]) {
                 return $firstArray[$i];
             }
