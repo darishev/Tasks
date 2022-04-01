@@ -8,7 +8,7 @@
             $tempResult = ($ipArray[$i]*256**$n);
             array_push($result,$tempResult);
         }
-            //$r = 128*256**3)+(32*256**2) + (10*256**1) +(1*256**0);
+           
         return array_sum($result);
     }
 
