@@ -1,7 +1,4 @@
 <?php
-
-$newArray = [2,3,6,7,1,3,5];
-
     function bubleSort(array $arraySort):array
     {
 
@@ -13,12 +10,9 @@ $newArray = [2,3,6,7,1,3,5];
                     $buffer = $arraySort[$a];
                     $arraySort[$a] = $arraySort[$s];
                     $arraySort[$s] = $buffer;
-                    var_dump($arraySort);
+                    return $arraySort;
                 }
             }
         }
         return $arraySort;
     }
-
-
-    bubleSort($newArray);
