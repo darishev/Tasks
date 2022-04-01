@@ -1,5 +1,5 @@
 <?php
-function findIndexOfNearest(array $inputArray = [null], int $needledNum = null):?array
+function findIndexOfNearest(array $inputArray = [null], int $needledNum = null): ?int
 {
     $goodResults = [];
     if ($inputArray != null) {
